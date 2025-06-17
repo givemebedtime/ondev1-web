@@ -33,7 +33,8 @@ export const appRoutes: Route[] = [
             {path: 'forgot-password', loadChildren: () => import('app/modules/auth/forgot-password/forgot-password.routes')},
             {path: 'reset-password', loadChildren: () => import('app/modules/auth/reset-password/reset-password.routes')},
             {path: 'sign-in', loadChildren: () => import('app/modules/auth/sign-in/sign-in.routes')},
-            {path: 'sign-up', loadChildren: () => import('app/modules/auth/sign-up/sign-up.routes')}
+            {path: 'sign-up', loadChildren: () => import('app/modules/auth/sign-up/sign-up.routes')},
+           
         ]
     },
 
@@ -79,7 +80,13 @@ export const appRoutes: Route[] = [
         },
         children: [
             {path: 'dashboards', loadChildren: () => import('app/modules/admin/dashboards/dashboards.routes')},
-            {path: 'report', loadChildren: () => import('app/modules/admin/example/example.routes')},
+             {
+                path: 'persons',
+                loadChildren: () =>
+                    import('app/modules/admin/persons/person.routes'),
+            },
+            {path: 'stores' , loadChildren: () => import('app/modules/admin/stores/store.routes')},
+            {path: 'meds',loadChildren: () =>import('app/modules/admin/meds/med.routes')},
             {path: 'companies', loadChildren: () => import('app/modules/admin/companies/companies.routes')},
             {path: 'users', loadChildren: () => import('app/modules/admin/user/user.routes')},
         ]

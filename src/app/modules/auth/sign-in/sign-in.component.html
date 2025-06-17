@@ -39,11 +39,11 @@
                     <mat-label>อีเมล</mat-label>
                     <input id="username" matInput [formControlName]="'username'" />
                     @if (signInForm.get('username').hasError('required')) {
-                        <mat-error> กรุณาระบบ อีเมล </mat-error>
+                        <mat-error> กรุณาระบุ อีเมล </mat-error>
                     }
                     @if (signInForm.get('username').hasError('email')) {
                         <mat-error>
-                            กรุณาระบบ อีเมล ให้ถูกต้อง
+                            กรุณาระบุ อีเมล ให้ถูกต้อง
                         </mat-error>
                     }
                 </mat-form-field>
@@ -81,7 +81,7 @@
                             ></mat-icon>
                         }
                     </button>
-                    <mat-error> กรุณาระบบ รหัสผ่าน</mat-error>
+                    <mat-error> กรุณาระบุ รหัสผ่าน</mat-error>
                 </mat-form-field>
 
                 <!-- Actions -->
