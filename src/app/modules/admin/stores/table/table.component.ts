@@ -47,8 +47,10 @@ export class TableStoreComponent implements OnChanges {
     );
 
     displayedColumns: string[] = [
-        'id',
-        'name',
+        'storeID',
+        'storeName',
+        'buiding',
+        'floor',
         'edit'
     ];
     dataSource: Store[] = [];
