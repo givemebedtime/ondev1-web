@@ -47,8 +47,10 @@ export class TableMedComponent implements OnChanges {
     );
 
     displayedColumns: string[] = [
-        'id',
-        'name',
+        'id',        // หรือ 'medID' ถ้าข้อมูลชื่อ medID
+        'name',     // หรือ 'medName' ถ้าข้อมูลชื่อ medName
+        'storeID',
+        'Location',
         'edit'
     ];
     dataSource: Med[] = [];
