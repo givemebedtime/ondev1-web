@@ -1,3 +1,6 @@
 export interface CreateMedDto {
-    name: string;
+    medID: string;
+    medName: string;
+    storeID: string;
+    location: number;
 }
