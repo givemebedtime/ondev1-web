@@ -1,3 +1,6 @@
 export interface CreateStoreDto {
-    name: string;
+    storeID: string;
+    storeName: string;
+    buiding: string;
+    floor: string;
 }
