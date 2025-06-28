@@ -114,7 +114,7 @@ export class MedListComponent {
 
     onEdit(med: Med): void {
         console.log(med);
-        this.onOpenEdit(med.id);
+        this.onOpenEdit(med.medID);
     }
 
     onDelete(med: Med): void {
@@ -124,7 +124,7 @@ export class MedListComponent {
             .afterClosed()
             .subscribe((result: boolean) => {
                 if (result) {
-                    this.deleteMed(med.id);
+                    this.deleteMed(med.medID);
                 }
             });
     }

@@ -1,5 +1,7 @@
 export interface Med
 {
-    id: string;
-    name: string;
+    medID: string;
+    medName: string;
+    storeID: string;
+    location: number;
 }

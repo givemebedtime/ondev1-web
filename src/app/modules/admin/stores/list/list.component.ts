@@ -114,7 +114,7 @@ export class StoreListComponent {
 
     onEdit(store: Store): void {
         console.log(store);
-        this.onOpenEdit(store.id);
+        this.onOpenEdit(store.storeID);
     }
 
     onDelete(store: Store): void {
@@ -124,7 +124,7 @@ export class StoreListComponent {
             .afterClosed()
             .subscribe((result: boolean) => {
                 if (result) {
-                    this.deleteStore(store.id);
+                    this.deleteStore(store.storeID);
                 }
             });
     }

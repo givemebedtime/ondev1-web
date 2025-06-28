@@ -87,7 +87,10 @@ export class EditStoreComponent implements OnInit {
     initialForm(store?: Store): FormGroup {
         return this._formBuilder.group(
             {
-                name: [store?.name || '', [Validators.required]],
+                storeID: [store?.storeID || '', [Validators.required]],
+                storeName: [store?.storeName || '', [Validators.required]],
+                building: [store?.building || '', [Validators.required]],
+                floor: [store?.floor || '', [Validators.required]],
             }
         );
     }
