@@ -87,7 +87,10 @@ export class EditMedComponent implements OnInit {
     initialForm(med?: Med): FormGroup {
         return this._formBuilder.group(
             {
-                name: [med?.name || '', [Validators.required]],
+                medID: [med?.medID || '', [Validators.required]],
+                medName: [med?.medName || '', [Validators.required]],
+                storeID: [med?.storeID || '', [Validators.required]],
+                location: [med?.location || 0, [Validators.required]],
             }
         );
     }

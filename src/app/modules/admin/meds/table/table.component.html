@@ -2,12 +2,12 @@
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef> ไอดียา </th>
-    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.medID}} </td>
   </ng-container>
 
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> ชื่อยา </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.medName}} </td>
   </ng-container>
 
   <ng-container matColumnDef="storeID">
@@ -16,8 +16,8 @@
   </ng-container>
 
   <ng-container matColumnDef="Location">
-    <th mat-header-cell *matHeaderCellDef> ที่อยู่ </th>
-    <td mat-cell *matCellDef="let element"> {{element.Location}} </td>
+    <th mat-header-cell *matHeaderCellDef> ที่วาง </th>
+    <td mat-cell *matCellDef="let element"> {{element.location}} </td>
   </ng-container>
 
 
