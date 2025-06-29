@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-dashboards',
@@ -9,14 +9,25 @@ import { RouterOutlet } from '@angular/router';
   encapsulation  : ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone     : true,
-  imports        : [RouterOutlet],
+  imports        : [RouterOutlet,NgApexchartsModule],
 })
 export class DashboardsComponent {
   /**
      * Constructor
      */
-    constructor()
-    {
+    constructor(){}
+    public chartOptions = {
+    series: [{
+      name: "ยอดขาย",
+      data: [10, 41, 35, 51, 49]
+    }],
+    chart: {
+      type: "bar",
+      height: 350
+    },
+    xaxis: {
+      categories: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค."]
     }
+  };
 }
 
