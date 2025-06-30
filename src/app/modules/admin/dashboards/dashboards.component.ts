@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import medRoutes from '../meds/med.routes';
 
 @Component({
   selector: 'app-dashboards',
@@ -23,7 +24,7 @@ export class DashboardsComponent {
     }],
     chart: {
       type: "bar",
-      height: 350
+      height: 550
     },
     xaxis: {
       categories: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค."]
