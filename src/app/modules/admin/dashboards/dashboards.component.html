@@ -26,6 +26,14 @@
                         [chart]="chartOptions.chart"
                         [xaxis]="chartOptions.xaxis">
                 </apx-chart>
+
+                <div *ngIf="chartOptions">
+                    <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                        [xaxis]="chartOptions.xaxis"
+                    ></apx-chart>
+                </div>
             </div>
             
         </div>
