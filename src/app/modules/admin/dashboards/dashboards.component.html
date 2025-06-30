@@ -4,10 +4,10 @@
         <div class="flex w-full items-center justify-between">
             <div>
                 <h2 class="text-3xl font-semibold leading-8 tracking-tight">
-                    System dashboard
+                    DASHBOARD
                 </h2>
                 <div class="text-secondary font-medium tracking-tight">
-                    Keep track of your tasks and transactions
+                    Keep track of your medications
                 </div>
             </div>
             <div class="ml-6 flex items-center">
@@ -21,7 +21,19 @@
                 <!-- Previous statement -->
                 
                 <!-- Current statement -->
-                
+                <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                        [xaxis]="chartOptions.xaxis">
+                </apx-chart>
+
+                <div *ngIf="chartOptions">
+                    <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                        [xaxis]="chartOptions.xaxis"
+                    ></apx-chart>
+                </div>
             </div>
             
         </div>

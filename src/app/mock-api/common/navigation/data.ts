@@ -38,14 +38,14 @@ export const horizontalNavigation: FuseNavigationItem[] = [
     },
     {
         id: 'store',
-        title: 'store',
+        title: 'สต็อกยา',
         type: 'basic',
         icon: 'heroicons_outline:user-group',
         link: '/stores',
     },
     {
         id: 'med',
-        title: 'medicine',
+        title: 'ข้อมูลยา',
         type: 'basic',
         icon: 'heroicons_outline:document-chart-bar',
         link: '/meds',
